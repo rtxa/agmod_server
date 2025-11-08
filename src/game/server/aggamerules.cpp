@@ -661,7 +661,7 @@ int AgGameRules::IPointsForKill(CBasePlayer *pAttacker, CBasePlayer *pKilled)
 		{
 			// As a reward for your kill you get full health and ammo.
 			pAttacker->pev->armorvalue = ag_start_armour.value;
-			pAttacker->pev->health = ag_start_armour.value;
+			pAttacker->pev->health = ag_start_health.value;
 
 			// Fill clip in all weapons weapon
 			for (int i = 0; i < MAX_ITEM_TYPES; i++)
